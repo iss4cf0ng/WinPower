@@ -40,6 +40,7 @@
             Name = "frmMain";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Form1";
+            Load += frmMain_Load;
             ResumeLayout(false);
         }
 
