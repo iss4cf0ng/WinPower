@@ -28,25 +28,27 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
             menuStrip1 = new MenuStrip();
+            toolStripMenuItem1 = new ToolStripMenuItem();
+            toolStripMenuItem2 = new ToolStripMenuItem();
+            toolStripMenuItem3 = new ToolStripMenuItem();
             statusStrip1 = new StatusStrip();
+            toolStripStatusLabel1 = new ToolStripStatusLabel();
             splitContainer1 = new SplitContainer();
             splitContainer2 = new SplitContainer();
             treeView1 = new TreeView();
             listView1 = new ListView();
-            tabControl1 = new TabControl();
-            tabPage1 = new TabPage();
-            richTextBox1 = new RichTextBox();
-            tabPage2 = new TabPage();
-            toolStripMenuItem1 = new ToolStripMenuItem();
-            toolStripMenuItem2 = new ToolStripMenuItem();
-            toolStripMenuItem3 = new ToolStripMenuItem();
-            toolStripStatusLabel1 = new ToolStripStatusLabel();
             columnHeader1 = new ColumnHeader();
             columnHeader2 = new ColumnHeader();
             columnHeader3 = new ColumnHeader();
             columnHeader4 = new ColumnHeader();
             columnHeader5 = new ColumnHeader();
+            tabControl1 = new TabControl();
+            tabPage1 = new TabPage();
+            richTextBox1 = new RichTextBox();
+            tabPage2 = new TabPage();
+            contextMenuStrip1 = new ContextMenuStrip(components);
             menuStrip1.SuspendLayout();
             statusStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)splitContainer1).BeginInit();
@@ -72,6 +74,24 @@
             menuStrip1.TabIndex = 0;
             menuStrip1.Text = "menuStrip1";
             // 
+            // toolStripMenuItem1
+            // 
+            toolStripMenuItem1.Name = "toolStripMenuItem1";
+            toolStripMenuItem1.Size = new Size(71, 23);
+            toolStripMenuItem1.Text = "Builder";
+            // 
+            // toolStripMenuItem2
+            // 
+            toolStripMenuItem2.Name = "toolStripMenuItem2";
+            toolStripMenuItem2.Size = new Size(71, 23);
+            toolStripMenuItem2.Text = "Setting";
+            // 
+            // toolStripMenuItem3
+            // 
+            toolStripMenuItem3.Name = "toolStripMenuItem3";
+            toolStripMenuItem3.Size = new Size(63, 23);
+            toolStripMenuItem3.Text = "About";
+            // 
             // statusStrip1
             // 
             statusStrip1.Font = new Font("Microsoft JhengHei UI", 11.25F);
@@ -82,6 +102,12 @@
             statusStrip1.Size = new Size(956, 24);
             statusStrip1.TabIndex = 1;
             statusStrip1.Text = "statusStrip1";
+            // 
+            // toolStripStatusLabel1
+            // 
+            toolStripStatusLabel1.Name = "toolStripStatusLabel1";
+            toolStripStatusLabel1.Size = new Size(158, 19);
+            toolStripStatusLabel1.Text = "toolStripStatusLabel1";
             // 
             // splitContainer1
             // 
@@ -131,6 +157,7 @@
             // listView1
             // 
             listView1.Columns.AddRange(new ColumnHeader[] { columnHeader1, columnHeader2, columnHeader3, columnHeader4, columnHeader5 });
+            listView1.ContextMenuStrip = contextMenuStrip1;
             listView1.Dock = DockStyle.Fill;
             listView1.FullRowSelect = true;
             listView1.Location = new Point(0, 0);
@@ -139,6 +166,31 @@
             listView1.TabIndex = 0;
             listView1.UseCompatibleStateImageBehavior = false;
             listView1.View = View.Details;
+            // 
+            // columnHeader1
+            // 
+            columnHeader1.Text = "ID";
+            columnHeader1.Width = 200;
+            // 
+            // columnHeader2
+            // 
+            columnHeader2.Text = "Public IP";
+            columnHeader2.Width = 120;
+            // 
+            // columnHeader3
+            // 
+            columnHeader3.Text = "Internal IP";
+            columnHeader3.Width = 120;
+            // 
+            // columnHeader4
+            // 
+            columnHeader4.Text = "OS";
+            columnHeader4.Width = 200;
+            // 
+            // columnHeader5
+            // 
+            columnHeader5.Text = "Online Date";
+            columnHeader5.Width = 200;
             // 
             // tabControl1
             // 
@@ -182,54 +234,10 @@
             tabPage2.Text = "tabPage2";
             tabPage2.UseVisualStyleBackColor = true;
             // 
-            // toolStripMenuItem1
+            // contextMenuStrip1
             // 
-            toolStripMenuItem1.Name = "toolStripMenuItem1";
-            toolStripMenuItem1.Size = new Size(71, 23);
-            toolStripMenuItem1.Text = "Builder";
-            // 
-            // toolStripMenuItem2
-            // 
-            toolStripMenuItem2.Name = "toolStripMenuItem2";
-            toolStripMenuItem2.Size = new Size(71, 23);
-            toolStripMenuItem2.Text = "Setting";
-            // 
-            // toolStripMenuItem3
-            // 
-            toolStripMenuItem3.Name = "toolStripMenuItem3";
-            toolStripMenuItem3.Size = new Size(63, 23);
-            toolStripMenuItem3.Text = "About";
-            // 
-            // toolStripStatusLabel1
-            // 
-            toolStripStatusLabel1.Name = "toolStripStatusLabel1";
-            toolStripStatusLabel1.Size = new Size(158, 19);
-            toolStripStatusLabel1.Text = "toolStripStatusLabel1";
-            // 
-            // columnHeader1
-            // 
-            columnHeader1.Text = "ID";
-            columnHeader1.Width = 200;
-            // 
-            // columnHeader2
-            // 
-            columnHeader2.Text = "Public IP";
-            columnHeader2.Width = 120;
-            // 
-            // columnHeader3
-            // 
-            columnHeader3.Text = "Internal IP";
-            columnHeader3.Width = 120;
-            // 
-            // columnHeader4
-            // 
-            columnHeader4.Text = "OS";
-            columnHeader4.Width = 200;
-            // 
-            // columnHeader5
-            // 
-            columnHeader5.Text = "Online Date";
-            columnHeader5.Width = 200;
+            contextMenuStrip1.Name = "contextMenuStrip1";
+            contextMenuStrip1.Size = new Size(61, 4);
             // 
             // frmMain
             // 
@@ -285,5 +293,6 @@
         private ColumnHeader columnHeader3;
         private ColumnHeader columnHeader4;
         private ColumnHeader columnHeader5;
+        private ContextMenuStrip contextMenuStrip1;
     }
 }
