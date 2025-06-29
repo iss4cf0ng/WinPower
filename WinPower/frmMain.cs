@@ -7,14 +7,24 @@ namespace WinPower
             InitializeComponent();
         }
 
-        void setup()
+        void fnSetup()
         {
 
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            setup();
+            fnSetup();
+        }
+
+        private void toolStripMenuItem4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void toolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

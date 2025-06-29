@@ -5,7 +5,11 @@ VisualStudioVersion = 17.11.35327.3
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WinPower", "WinPower\WinPower.csproj", "{528A7049-01B1-4E09-AD7C-6CD4844F34BC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinPowerC2", "WinPowerC2\WinPowerC2.csproj", "{81E0E493-B1EB-401C-95F7-7E050B56B5B9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WinPowerC2", "WinPowerC2\WinPowerC2.csproj", "{81E0E493-B1EB-401C-95F7-7E050B56B5B9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Lab", "Lab", "{231AB58F-0B4C-4BB6-9030-86BC595807F7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SrvTest", "SrvTest\SrvTest.csproj", "{3596BB43-743B-4EAC-B1CF-43C30450616B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,9 +25,16 @@ Global
 		{81E0E493-B1EB-401C-95F7-7E050B56B5B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{81E0E493-B1EB-401C-95F7-7E050B56B5B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{81E0E493-B1EB-401C-95F7-7E050B56B5B9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3596BB43-743B-4EAC-B1CF-43C30450616B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3596BB43-743B-4EAC-B1CF-43C30450616B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3596BB43-743B-4EAC-B1CF-43C30450616B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3596BB43-743B-4EAC-B1CF-43C30450616B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{3596BB43-743B-4EAC-B1CF-43C30450616B} = {231AB58F-0B4C-4BB6-9030-86BC595807F7}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {A0AEF60A-0A11-462D-8386-87BD3D86E41F}

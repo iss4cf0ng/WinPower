@@ -44,11 +44,12 @@
             columnHeader3 = new ColumnHeader();
             columnHeader4 = new ColumnHeader();
             columnHeader5 = new ColumnHeader();
+            contextMenuStrip1 = new ContextMenuStrip(components);
             tabControl1 = new TabControl();
             tabPage1 = new TabPage();
             richTextBox1 = new RichTextBox();
             tabPage2 = new TabPage();
-            contextMenuStrip1 = new ContextMenuStrip(components);
+            toolStripMenuItem4 = new ToolStripMenuItem();
             menuStrip1.SuspendLayout();
             statusStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)splitContainer1).BeginInit();
@@ -66,7 +67,7 @@
             // menuStrip1
             // 
             menuStrip1.Font = new Font("Microsoft JhengHei UI", 11.25F);
-            menuStrip1.Items.AddRange(new ToolStripItem[] { toolStripMenuItem1, toolStripMenuItem2, toolStripMenuItem3 });
+            menuStrip1.Items.AddRange(new ToolStripItem[] { toolStripMenuItem4, toolStripMenuItem1, toolStripMenuItem2, toolStripMenuItem3 });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
             menuStrip1.Padding = new Padding(8, 3, 0, 3);
@@ -79,6 +80,7 @@
             toolStripMenuItem1.Name = "toolStripMenuItem1";
             toolStripMenuItem1.Size = new Size(71, 23);
             toolStripMenuItem1.Text = "Builder";
+            toolStripMenuItem1.Click += toolStripMenuItem1_Click;
             // 
             // toolStripMenuItem2
             // 
@@ -192,6 +194,11 @@
             columnHeader5.Text = "Online Date";
             columnHeader5.Width = 200;
             // 
+            // contextMenuStrip1
+            // 
+            contextMenuStrip1.Name = "contextMenuStrip1";
+            contextMenuStrip1.Size = new Size(61, 4);
+            // 
             // tabControl1
             // 
             tabControl1.Alignment = TabAlignment.Bottom;
@@ -234,10 +241,12 @@
             tabPage2.Text = "tabPage2";
             tabPage2.UseVisualStyleBackColor = true;
             // 
-            // contextMenuStrip1
+            // toolStripMenuItem4
             // 
-            contextMenuStrip1.Name = "contextMenuStrip1";
-            contextMenuStrip1.Size = new Size(61, 4);
+            toolStripMenuItem4.Name = "toolStripMenuItem4";
+            toolStripMenuItem4.Size = new Size(78, 23);
+            toolStripMenuItem4.Text = "Connect";
+            toolStripMenuItem4.Click += toolStripMenuItem4_Click;
             // 
             // frmMain
             // 
@@ -294,5 +303,6 @@
         private ColumnHeader columnHeader4;
         private ColumnHeader columnHeader5;
         private ContextMenuStrip contextMenuStrip1;
+        private ToolStripMenuItem toolStripMenuItem4;
     }
 }
