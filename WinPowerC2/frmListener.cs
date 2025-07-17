@@ -8,23 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace WinPower
+namespace WinPowerC2
 {
-    public partial class frmConnect : Form
+    public partial class frmListener : Form
     {
-        public frmConnect()
+        public frmListener()
         {
             InitializeComponent();
-        }
-
-        void fnSetup()
-        {
-
-        }
-
-        private void frmConnect_Load(object sender, EventArgs e)
-        {
-            fnSetup();
         }
     }
 }

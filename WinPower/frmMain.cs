@@ -17,12 +17,23 @@ namespace WinPower
             fnSetup();
         }
 
+        //Connection
         private void toolStripMenuItem4_Click(object sender, EventArgs e)
         {
 
         }
-
+        //Builder
         private void toolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+
+        }
+        //Setting
+        private void toolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+
+        }
+        //About
+        private void toolStripMenuItem3_Click(object sender, EventArgs e)
         {
 
         }
