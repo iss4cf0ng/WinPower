@@ -2,4 +2,4 @@
 Remote Access Tool for Windows PowerShell script.
 
 # Description
-- Recon Implant (衝鋒馬)
+- Early stage remote access tool.
